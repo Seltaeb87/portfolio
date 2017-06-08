@@ -7,19 +7,7 @@
 </head>
 <body>
  <div class="container"></div>
- <!-- Header -->
-    <div class="header">
- <!-- Site navigation menu -->
-        <div class="menu">
-            <ul>
-                <li>Home</li>
-                <li>Programming</li>
-                <li>Photography</li>
-                <li>Astrophotography</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-    </div>
+    <?php include 'header.php' ?>
 
 
 <p>
