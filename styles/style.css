@@ -1,5 +1,9 @@
-body{
-    background: #666666;
+body {
+    background-color: #EBE8E4;
+    color: #222;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
 }
 
 .container{
@@ -11,13 +15,51 @@ body{
 }
 
 .menu{
-    text-align: right;
-    margin: 0;
-    padding: 0;
-    display: inline;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: #888;
+    display: block;
+    margin: 8px 22px 8px 22px;
+    overflow: hidden;
+    width: 90%;
 }
 
-ul li{
-    display: inline;
-    width: 60px;
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style-type: none;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.menu > ul > li > a {
+    color: #aaa;
+    display: block;
+    line-height: 56px;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+.menu > ul > li:hover {
+    background-color: rgb( 70, 130, 180 );
+}
+
+.menu > ul > li:hover > a {
+    color: rgb( 255, 255, 255 );
+}
+
+.menu ul li a.active
+{
+    background: rgb(70, 130, 180);
+    color: white;
 }
